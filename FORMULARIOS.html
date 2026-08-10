@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    <form action="procesar_formulario.jsp" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <br/>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br/>
+        <label for="cantidad">Cantidad (entre 1 y 10):</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+        <!-- Para cantidades y type number, min es cantidad minima, max es 
+         cantidad maxima, step es el valor de intervalo y value especifica 
+         el valor por defecto -->
+        <br/>
+        <br/>
+
+        <label for="estrato">Estrato:</label><br/>
+        <input type="range" id="estrato" name="estrato" min="1" max="6">
+        <br/><br/>
+        <input type="submit" value="Enviar">
+        <br/><br/>
+        <input type="reset" value="Borrar">
+        <br/><br/>
+        <input type="button" value="Botón">
+        <br/><br/>
+        <input type="hidden" name="codigo" value="100">
+        <br/><br/>
+
+        <!--Hay mas input types como, colorm search, date, time, tel, 
+        week, email, url,month, etc.-->
+        <label for="genero">Género:</label><br/>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="M">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="F">
+        <!--Al tener el mismo name, pertenecen al mismo grupo 
+        y solo se puede escoger uno.-->
+        <br/><br/>
+
+        <label for="deporte">Deporte:</label><br/>
+        <label for="futbol">Fútbol</label>
+        <input type="checkbox" id="futbol" name="deporte" value="1"/>
+        <label for="baloncesto">Baloncesto</label>
+        <input type="checkbox" id="baloncesto" name="deporte" value="2"/>
+        <label for="tenis">Tenis</label>
+        <input type="checkbox" id="tenis" name="deporte" value="3"/>
+        <!--Al tener el mismo name, pertenecen al mismo grupo
+        y se pueden escoger varios.-->
+        <!--El value es lo que se envia-->
+        <br/><br/>
+
+        <label for="programa">Programa:</label><br/>
+            <select name="programa" id="programa">
+                <option value="10">Tecnología en Desarrollo de Software</option>
+                <option value="20">Ingeniería de Software</option>
+                <option value="30">Ingeniería Agrícola</option>
+            </select>
+        <br/><br/>
+
+        <label for="comentario">Comentario:</label><br/>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        <br/><br/>
+
+        <label for="navegador">Navegador:</label><br/>
+        <input name="navegador" id="navegador" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">Chrome</option>  
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+        <br/><br/>
+
+        <fieldset>
+            <legend>Nuevos tipos de input</legend>
+            <br/>
+        </fieldset>
+        <br/><br/>
+
+
+    </form>
+</body>
+</html>

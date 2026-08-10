@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--ETIQUETAS DE TEXTO-->
+        <h1>Bienvenido a mi sitio web</h1>
+        <h2>Subtítulo de la página</h2>
+        <h3>Encabezado de nivel 3</h3>
+        <h4>Encabezado de nivel 4</h4>
+        <h5>Encabezado de nivel 5</h5>
+        <h6>Encabezado de nivel 6</h6>
+        
+        <p>Far far <b>bold</b>, behind the word mountains, <strong>from</strong> the countries, <i>Italic</i>, <br> Consonantia, there live the blind texts. </p>
+        
+        <!--"blindtextgenerator (generador de texto)"
+        etiqueta <b y <strong para negrilla-->
+        
+        <!--LISTAS-->
+        <h1>Listas</h1>
+        <h2>Lista ordenada</h2>
+        <ol>
+            <li>Primer elemento de la lista ordenada</li>
+            <li>Segundo elemento de la lista ordenada</li>
+            <li>Tercer elemento de la lista ordenada</li>
+        </ol>
+
+        <h2>Lista desordenada</h2>
+        <ul>
+            <li>Primer elemento de la lista desordenada</li>
+            <li>Segundo elemento de la lista desordenada</li>
+            <li>Tercer elemento de la lista desordenada</li>
+        </ul>
+
+        <h2>Lista de definición</h2>
+        <dl>
+            <dt>Titulo de definición 1</dt> <!--definition title-->
+            <dd>Descripción del elemento de definición 1</dd> <!--definition description-->
+           
+        </dl>
+
+        <!--tablas-->
+        <h1>Tablas</h1>
+        <table>
+            <caption>DESCRIPCION</caption>
+            <thead>
+                <tr> <!--TABLE ROW-->
+                    <th>Columna 1</th> <!--TABLE HEADER, titulo de las columnas-->
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Celda 1</td> <!--TABLE DATA-->
+                    <td>Celda 2</td>
+                    <td>Celda 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Pie de tabla</td><!--colspan para unir columnas, rowspan para unir filas -->
+                </tr>
+            </tfoot>
+        </table>   
+    
+        <!--ENLACES-->
+        <h1>Enlaces</h1>
+        <h2>ENLACE A OTRA PAGINA</h2>
+        <p>Visita <a href="FORMULARIOS.html" target="_blank">esta pagina</a> para buscar información.</p> <!-- _blank abre en nueva ventana-->
+        <!--Rutas relativas y absolutas, CONSULTAR-->
+        
+        <h2>ENLACE A UNA PAGINA EXTERNA</h2>
+        <p>Visita <a href="https://www.google.com" target="_self">Google</a> para buscar información.</p> <!--link externo, _blank abre en misma ventana-->
+
+        <h2>ENLACE A UNA SECCION DE LA MISMA PAGINA</h2>
+        <p>Ir a la sección 2 <a href="#seccion2">seccion 2</a> de esta página.</p>
+        
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+        <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+
+        <a id="seccion2"></a>
+
+        <!--ETIQUETA IMAGEN-->
+        <h2>ETIQUETAS DE IMAGEN</h2>
+        <h3>Imagen con etiqueta img</h3>
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="nombre imagen" />
+        
+        <h3>Imagen con etiqueta figure y figcaption</h3>
+        <figure>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="nombre imagen" />
+            <figcaption>Descripción de la imagen</figcaption>
+        </figure>
+        
+        <h3>Imagen con etiqueta picture</h3>
+        <picture> <!--hace la imagen responsive-->
+            <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg"> <!--para pantallas grandes-->
+            <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg"> <!--para pantallas medianas-->
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="nombre imagen"> <!--imagen por defecto sin atributo, por si no entra entre las otras condiciones anteriores-->            
+        </picture>
+
+        <!--MULTIMEDIA-->
+        <h1>MULTIMEDIA</h1>
+        <h2>AUDIO</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg"> <!--si no soporta este entonces el mensaje de abajo-->
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>VIDEO</h2>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!--contenido de fuentes esternas-->
+        <h2>CONTENDIO EXTERNO</h2>
+        <!--En youtube con compartir e incorporar-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pX7-_fb8uQk?si=gDXaSqBpMkErU6PZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    </body>
+</html> 
+
