@@ -1,0 +1,42 @@
+/*--SELECTIR UNIVERSAL--*/
+* {
+    margin: 18px;
+
+}
+
+/*--SELECTOR DE ETIQUETA--*/
+h1 {
+    background-color: red;
+}
+
+p a {
+    color: rgb(12, 190, 98);
+    font-weight: bold;
+    font-size: 5px;
+}
+
+a{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*--SELECTOR DE ID*/
+#estilo01 {
+    background-color: red;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/*--SELECTOR DE CLASE*/
+.estilo02 {
+    background-color: blue;
+}
+
+
+div {
+    width: 200px;
+    padding: 0 50px;
+    border-left: 5px solid gray;
+}
+
