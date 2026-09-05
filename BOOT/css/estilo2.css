@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+    background-color: rgba(172, 199, 213, 0.297);
+}
+
+.barra {
+    background-color: hsl(239, 55%, 51%) !important;
+}
+.productos {
+    padding-top: 10px;
+}
+
+.sc1 {
+    background-color: hsl(239, 55%, 51%);
+}
