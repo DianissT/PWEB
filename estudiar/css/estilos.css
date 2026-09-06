@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+header {
+    background-color: #222;
+    color: white;
+}
+
+#bienvenida {
+    background-color: rgb(114, 160, 203);
+}
+
+.btn-outline-info {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.libdisp {
+    padding: 20px;
+    margin: 10px;
+}
+
+footer p {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}

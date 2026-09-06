@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">   
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-xl">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="#libros">Libros</a>
+            <a class="nav-link" href="#registro">Registro</a>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/biblioteca.jpg" class="d-block w-100" alt="Biblioteca">
+                </div>
+                <div class="carousel-item">
+                <img src="img/biblioteca.jpg" class="d-block w-100" alt="BIiblioteca">
+                </div>
+                <div class="carousel-item">
+                <img src="img/biblioteca.jpg" class="d-block w-100" alt="Biblioteca">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="bienvenida">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Biblioteca Virtual
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Encuentra tus libros favoritos.</strong> 
+                    </div>
+                        <button id="infoButton" type="button" class="btn btn-outline-info" onclick="informacion()">Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="libros">
+
+            <h2 class="libdisp">Libros disponibles</h2>
+
+            <div class="container">
+
+                <article>
+                    <div class="card">
+                        <div class="card-header">
+                            El Principito
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Antoine de Saint-Exupéry</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <div class="card-header">
+                            Cien años de soledad
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gabriel García Márquez</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <div class="card-header">
+                            Don Quijote de la Mancha
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Miguel de Cervantes</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="registro">
+
+            <h2 class="libdisp">Registro</h2>
+
+            <form id="formulario">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="input-group flex-nowrap px-5">
+                            <span class="input-group-text">Nombre</span>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="input-group flex-nowrap px-5">
+                            <span class="input-group-text">@</span>
+                            <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col px-5 mt-3 mt-md-0 mt-lg-0">
+                        <button class="btn btn-primary" type="submit">
+                            Registrarse
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="mensaje" class="alert alert-success my-1" role="alert"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container-fluid text-center bg-dark mt-5" >
+            <p>Biblioteca Virtual 2026</p>
+        </div>
+    </footer>
+
+
+    
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
